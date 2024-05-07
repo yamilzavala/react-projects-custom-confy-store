@@ -138,6 +138,9 @@ const Wrapper = styled.section`
     -webkit-animation: loading 2s infinite ease;
     animation: loading 2s infinite ease;
   }
+  .succeeded {
+    margin-top: 0.5rem;
+  }
   @keyframes loading {
     0% {
       -webkit-transform: rotate(0deg);
