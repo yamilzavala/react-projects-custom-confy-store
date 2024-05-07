@@ -19,6 +19,7 @@ const Wrapper = styled.section`
   min-height: 20vh;
   display: flex;
   align-items: center;
+  margin-top: var(--mt-page-hero);
 
   color: var(--clr-primary-1);
   a {

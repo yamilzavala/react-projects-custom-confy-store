@@ -23,7 +23,7 @@ const CartButtons = () => {
     {
       myUser ?
       (<button type='button' onClick={() => logout({returnTo: window.location.origin})} className='auth-btn'>
-      Logout <FaUserPlus/>
+      Logout <FaUserMinus/>
       </button>) :
       (<button type='button' onClick={loginWithRedirect} className='auth-btn'>
       Login <FaUserPlus/>
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
     position: absolute;
     top: -10px;
     right: -16px;
-    background: var(--clr-primary-5);
+    background: var(--clr-red-dark);
     width: 16px;
     height: 16px;
     display: flex;

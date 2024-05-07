@@ -8,6 +8,7 @@ import CartButtons from './CartButtons'
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 import { useGLobalContext } from '../context/global_context'
+import Logo from './Logo'
 
 const Nav = () => {
   const {openSidebar} = useGLobalContext()
@@ -19,7 +20,8 @@ const Nav = () => {
         <div className="nav-header" >
           {/* logo */}
           <Link to="/">
-            <img src={logo} alt="logo" />
+            {/* <img src={logo} alt="logo" /> */}
+            <Logo/>
           </Link>
 
           {/* toggle button */}
@@ -53,10 +55,17 @@ const Nav = () => {
 }
 
 const NavContainer = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-white);
+  z-index: 2;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  box-shadow: var(--light-shadow);
 
   .nav-center {
     width: 90vw;

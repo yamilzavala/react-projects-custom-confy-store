@@ -6,31 +6,32 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(22, 28%, 21%);
-  --clr-primary-2: hsl(22, 28%, 29%);
-  --clr-primary-3: hsl(22, 28%, 37%);
-  --clr-primary-4: hsl(22, 28%, 45%);
+  --clr-primary-1: #1f2937;
+  --clr-primary-2: #374151;
+  --clr-primary-3: #4b5563;
+  --clr-primary-4: #6b7280;
   /* primary/main color */
-  --clr-primary-5: hsl(22, 31%, 52%);
+  --clr-primary-5: #111827;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(22, 31%, 60%);
-  --clr-primary-7: hsl(22, 31%, 67%);
-  --clr-primary-8: hsl(20, 31%, 74%);
-  --clr-primary-9: hsl(22, 31%, 81%);
-  --clr-primary-10: hsl(22, 31%, 88%);
+  --clr-primary-6:  #9ca3af;
+  --clr-primary-7:  #d1d5db;
+  --clr-primary-8:  #e5e7eb;
+  --clr-primary-9:  #f3f4f6;
+  --clr-primary-10: #f9fafb;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: #0f172a;
+  --clr-grey-2: #1e293b;
+  --clr-grey-3: #334155;
+  --clr-grey-4: #475569;
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: #64748b;
+  --clr-grey-6: #94a3b8;
+  --clr-grey-7: #cbd5e1;
+  --clr-grey-8: #e2e8f0;
+  --clr-grey-9: #f1f5f9;
+  --clr-grey-10: #f8fafc;
   --clr-white: #fff;
+  --clr-red-cart: ##ef4444;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
@@ -43,6 +44,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --mt-page-hero: 80px;
 }
 /*
 =============== 
@@ -58,8 +60,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Bebas Neue', sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -80,6 +83,7 @@ h2,
 h3,
 h4,
 h5 {
+  font-family: 'Bebas Neue', sans-serif;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -140,6 +144,9 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
+}
+button {
+  font-family: inherit;
 }
 
 @media screen and (min-width: 992px) {

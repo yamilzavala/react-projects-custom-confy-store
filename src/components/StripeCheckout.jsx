@@ -49,7 +49,7 @@ const Wrapper = styled.section`
     display: none;
   }
   #card-error {
-    color: rgb(105, 115, 134);
+    color: var(--clr-red-dark);
     font-size: 16px;
     line-height: 20px;
     margin-top: 12px;
@@ -69,7 +69,7 @@ const Wrapper = styled.section`
   }
   /* Buttons and links */
   button {
-    background: #5469d4;
+    background: var(--clr-grey-1);
     font-family: Arial, sans-serif;
     color: #ffffff;
     border-radius: 0 0 4px 4px;
