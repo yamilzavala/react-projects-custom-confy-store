@@ -34,7 +34,7 @@ const SingleProductPage = () => {
      // eslint-disable-next-line
   }, [error])
 
-  if(loading) return <Loading/>  
+  if(loading) return <Loading className="section section-center page"/>  
 
   return <Wrapper>
     <PageHero title={name} product/>

@@ -9,8 +9,8 @@ import Product from './Product'
 const FeaturedProducts = () => {
   const {featured_products: featured, products_loading: loading, products_error: error} = useProductsContext()
 
-  if(error) return <Error/>
-  if(loading) return <Loading/>
+  if(error) return <Error className="section section-center page"/>
+  if(loading) return <Loading className="section section-center page"/>
 
   return <Wrapper className='section'>
     {/* title */}
