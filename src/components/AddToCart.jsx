@@ -95,6 +95,7 @@ const Wrapper = styled.section`
   .btn {
     margin-top: 1rem;
     width: 140px;
+    text-align: center;
   }
 `
 export default AddToCart
