@@ -42,6 +42,6 @@ export const services = [
   },
 ]
 
-export const products_url = 'https://custom-confy-store-api.onrender.com/api/v1'
+export const products_url = 'https://www.course-api.com/react-store-products'
 
-export const single_product_url = `https://custom-confy-store-api.onrender.com/api/v1/products?id=`
+export const single_product_url = `https://www.course-api.com/react-store-single-product?id=`
